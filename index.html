@@ -146,7 +146,7 @@
 						<div class="divtext iUp">
 							<p class="neon">希望这首《やわらかな光》可以治愈你</p>
 							<audio id="audioPlayer" src="./Music/やわらかな光.mp3"></audio>
-							<button class="bn632-hover bn27" onclick="document.getElementById('audioPlayer').play()">播放</button>
+							<button class="bn632-hover bn27" onclick="togglePlay()">播放/暂停</button>
 						</div>
                     </p>
                     <div class="navigation-wrapper iUp">
@@ -216,6 +216,20 @@
     </header>
     <script type="text/javascript" src="https://unpkg.com/dmego-home-page@latest/assets/js/main.js"></script>
     <script type="text/javascript" src="./assets/json/images.json?cb=getBingImages"></script>
+	<script>
+		var audio = document.getElementById("audioPlayer");
+		var playButton = document.getElementById("playButton");
+	
+		function togglePlay() {
+			if (audio.paused) {
+				audio.play();
+				playButton.innerHTML = "暂停";
+			} else {
+				audio.pause();
+				playButton.innerHTML = "播放";
+			}
+		}
+	</script>
 </body>
 </html>
 	
