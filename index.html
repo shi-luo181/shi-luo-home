@@ -42,9 +42,9 @@
     <link rel="icon" href="https://unpkg.com/dmego-home-page@latest/favicon.ico">
 	<style>
 			.bn632-hover {
-			  width: 160px;
+			  width: 150px;
 			  font-size: 16px;
-			  font-weight: 600;
+			  font-weight: 400;
 			  color: #fff;
 			  cursor: pointer;
 			  margin: 20px;
@@ -52,7 +52,7 @@
 			  text-align:center;
 			  border: none;
 			  background-size: 300% 100%;
-			  border-radius: 50px;
+			  border-radius: 40px;
 			  moz-transition: all .4s ease-in-out;
 			  -o-transition: all .4s ease-in-out;
 			  -webkit-transition: all .4s ease-in-out;
@@ -83,7 +83,7 @@
 			}
 			.neon {
 			    color: #cce7f8;
-			    font-size: 1.5rem;
+			    font-size: 0.8rem;
 			    -webkit-animation: shining 0.5s alternate infinite;
 			    animation: shining 0.5s alternate infinite;
 			}
@@ -95,6 +95,16 @@
 			    to {
 			        text-shadow: 0 0 5px lightblue, 0 0 10px lightblue, 0 0 15px lightblue, 0 0 20px skyblue, 0 0 25px skyblue, 0 0 30px skyblue;
 			    }
+			}
+			.divtext{
+				 position: absolute;
+				  bottom: 0;
+				  right: 0;
+			}
+			@media only screen and (max-width: 600px) {
+				.divtext{
+					transform: scale(0.4);
+				}
 			}
 		</style>
 </head>
@@ -135,10 +145,11 @@
                     <p id="description" class="panel-cover__description iUp">如何得与凉风约, 不共尘沙一并来!
                         <br/>
                         <strong>-「中牟道中」</strong>
-						
-							<p class="neon">希望这首<やわらかな光》可以治愈你</p>
+						<div class="divtext iUp">
+							<p class="neon">希望这首《やわらかな光》可以治愈你</p>
 							<audio id="audioPlayer" src="./Music/やわらかな光.mp3"></audio>
 							<button class="bn632-hover bn27" onclick="document.getElementById('audioPlayer').play()">播放</button>
+						</div>
                     </p>
                     <div class="navigation-wrapper iUp">
                         <div>
@@ -198,13 +209,12 @@
 						
                     </div>
                 </div>
-				<div class="remark iUp">
-				</div>
             </div>
             <div class="panel-cover--overlay cover-slate"></div>
         </div>
         <div class="remark iUp">
         </div>
+		
     </header>
     <script type="text/javascript" src="https://unpkg.com/dmego-home-page@latest/assets/js/main.js"></script>
     <script type="text/javascript" src="./assets/json/images.json?cb=getBingImages"></script>
