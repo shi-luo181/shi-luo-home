@@ -40,6 +40,63 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/iconfont.css">
     <link rel="apple-touch-icon" href="https://unpkg.com/dmego-home-page@latest/apple-touch-icon.png">
     <link rel="icon" href="https://unpkg.com/dmego-home-page@latest/favicon.ico">
+	<style>
+			.bn632-hover {
+			  width: 160px;
+			  font-size: 16px;
+			  font-weight: 600;
+			  color: #fff;
+			  cursor: pointer;
+			  margin: 20px;
+			  height: 55px;
+			  text-align:center;
+			  border: none;
+			  background-size: 300% 100%;
+			  border-radius: 50px;
+			  moz-transition: all .4s ease-in-out;
+			  -o-transition: all .4s ease-in-out;
+			  -webkit-transition: all .4s ease-in-out;
+			  transition: all .4s ease-in-out;
+			}
+			
+			.bn632-hover:hover {
+			  background-position: 100% 0;
+			  moz-transition: all .4s ease-in-out;
+			  -o-transition: all .4s ease-in-out;
+			  -webkit-transition: all .4s ease-in-out;
+			  transition: all .4s ease-in-out;
+			}
+			
+			.bn632-hover:focus {
+			  outline: none;
+			}
+			
+			.bn632-hover.bn27 {
+			  background-image: linear-gradient(
+			    to right,
+			    #ed6ea0,
+			    #ec8c69,
+			    #f7186a,
+			    #fbb03b
+			  );
+			  box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+			}
+			.neon {
+			    color: #cce7f8;
+			    font-size: 1.5rem;
+			    -webkit-animation: shining 0.5s alternate infinite;
+			    animation: shining 0.5s alternate infinite;
+			}
+			@-webkit-keyframes shining {
+			    from {
+			        text-shadow: 0 0 10px lightblue, 0 0 20px lightblue, 0 0 30px lightblue, 0 0 40px skyblue, 0 0 50px skyblue, 0 0 60px skyblue;
+			    }
+			
+			    to {
+			        text-shadow: 0 0 5px lightblue, 0 0 10px lightblue, 0 0 15px lightblue, 0 0 20px skyblue, 0 0 25px skyblue, 0 0 30px skyblue;
+			    }
+			}
+		</style>
 </head>
 
 <body>
@@ -133,20 +190,18 @@
                                 </ul>
                             </nav>
                         </div>
+						
                     </div>
                 </div>
             </div>
             <div class="panel-cover--overlay cover-slate"></div>
         </div>
-        <!-- <div class="beian iUp">
-            <a class="icp" href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">XXX</a>
-            <a class="gwab" href="http://www.beian.gov.cn/portal/recordQuery" target="_blank">XXX</a>
-        </div> -->
         <div class="remark iUp">
-            <p class="power">Powered By 
-                <a href="https://github.com/features/actions" target="_blank"> GitHub Actions </a> And 
-                <a href="https://hitokoto.cn/" target="_blank"> Hitokoto </a>
-            </p>
+			<p class="neon">希望这首<やわらかな光》可以治愈你</p>
+			<audio id="audioPlayer" src="./Music/やわらかな光.mp3"></audio>
+			<button class="bn632-hover bn27" onclick="document.getElementById('audioPlayer').play()">播放</button>
+        </div>
+        <div class="remark iUp">
         </div>
     </header>
     <script type="text/javascript" src="https://unpkg.com/dmego-home-page@latest/assets/js/main.js"></script>
