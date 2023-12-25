@@ -89,32 +89,33 @@
 						-->
                     </p>
 					
-						<div class="iUp">
-							<h4 class="neon text"><a href="./index.html" class="blog-button">点击返回首页</a></h4>
-							<h2 class="neon text">留言板</h2>
-						    <nav class="cover-navigation navigation--social">
-						        <ul class="navigation">
-						            <li class="navigation__item">
-						                <div>
-						                  <form name="contact" method="POST" data-netlify="true" netlify>
-						                    <label class="panel-cover__description iUp">名字</label>
-						                    <input type="text" id="fname" name="name" placeholder="您的名字..">
-						                
-						                    <label class="panel-cover__description iUp">留言内容</label>
-						                    <textarea id="message" name="message" placeholder="您的留言.." style="height:200px"></textarea>
-						                
-						                    <input type="checkbox" id="anonymous" name="anonymous" onclick="toggleAnonymous()">
-						                    <label class="panel-cover__description iUp">匿名</label><br>
-						                
-						                    <button class="bn635-hover bn27" type="submit" onclick="if(document.getElementById('anonymous-yes').checked){document.getElementsByName('name')[0].value = '匿名';}">提交</button>
-						                  </form>
-						                </div>
-						            </li>
-						        </ul>
-						    </nav>
-						</div>
                     </div>
+					<div class="iUp">
+						<h4 class="neon text"><a href="./index.html" class="blog-button">点击返回首页</a></h4>
+						<h2 class="neon text">留言板</h2>
+					    <nav class="cover-navigation navigation--social">
+					        <ul class="navigation">
+					            <li class="navigation__item">
+					                <div>
+					                  <form name="contact" method="POST" data-netlify="true" netlify>
+					                    <label class="panel-cover__description iUp">名字</label>
+					                    <input type="text" id="fname" name="name" placeholder="您的名字..">
+					                
+					                    <label class="panel-cover__description iUp">留言内容</label>
+					                    <textarea id="message" name="message" placeholder="您的留言.." style="height:200px"></textarea>
+					                
+					                    <input type="checkbox" id="anonymous" name="anonymous" onclick="toggleAnonymous()">
+					                    <label class="panel-cover__description iUp">匿名</label><br>
+					                
+					                    <button class="bn635-hover bn27" type="submit" onclick="if(document.getElementById('anonymous-yes').checked){document.getElementsByName('name')[0].value = '匿名';}">提交</button>
+					                  </form>
+					                </div>
+					            </li>
+					        </ul>
+					    </nav>
+					</div>
                 </div>
+				
             </div>
             <div class="panel-cover--overlay cover-slate"></div>
         </div>
