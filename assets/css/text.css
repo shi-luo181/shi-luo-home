@@ -144,3 +144,12 @@
 					  padding: 0;
 					  margin: 0;
 					}
+					.article {
+					  width: 980px;
+					}
+					
+					@media (max-width: 320px) {
+					  .article {
+					    width: 320px;
+					  }
+					}
