@@ -102,3 +102,44 @@ btnMobileMenu.addEventListener('click', function () {
 	btnMobileMenu.classList.toggle('animated');
 	btnMobileMenu.classList.toggle('fadeIn');
 });
+var audio = document.getElementById("audioPlayer");
+		var playButton = document.getElementById("playButton");
+	
+		function togglePlay() {
+			if (audio.paused) {
+				audio.play();
+				playButton.innerHTML = "暂停";
+			} else {
+				audio.pause();
+				playButton.innerHTML = "播放";
+			}
+		}
+		
+		function updateTime() {
+		    const date1 = new Date("11/02/2023 00:00:00.000");
+		    const date2 = Date.now();
+		    const Difference_In_Time = date2 - date1.getTime();
+		
+		    const days = String(Math.floor(Difference_In_Time / (1000 * 60 * 60 * 24))).padStart(2, '0');
+		    const hours = String(Math.floor((Difference_In_Time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+		    const minutes = String(Math.floor((Difference_In_Time % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+		    const seconds = String(Math.floor((Difference_In_Time % (1000 * 60)) / 1000)).padStart(2, '0');
+		    const milliseconds = String(Difference_In_Time % 1000).padStart(3, '0');
+		 
+		    const timeString = days + "," + hours + "," + minutes + "," + seconds + "," + milliseconds + "Data";
+		    document.getElementById("state1").innerHTML = timeString;
+		}
+		
+		setInterval(updateTime, 1);
+
+	function toggleAnonymous() {
+	  var checkBox = document.getElementById("anonymous");
+	  var text = document.getElementById("fname");
+	  if (checkBox.checked == true){
+		text.value = "匿名";
+		text.disabled = true;
+	  } else {
+		text.value = "";
+		text.disabled = false;
+	  }
+	}

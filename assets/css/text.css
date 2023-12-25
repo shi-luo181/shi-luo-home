@@ -15,6 +15,45 @@
 			  -webkit-transition: all .4s ease-in-out;
 			  transition: all .4s ease-in-out;
 			}
+		.bn635-hover {
+						  width: 160px;
+						  font-size: 20px;
+						  font-weight: 200;
+						  color: #fff;
+						  cursor: pointer;
+						  margin: 20px;
+						  height: 50px;
+						  text-align:center;
+						  border: none;
+						  background-size: 200% 100%;
+						  border-radius: 10px;
+						  moz-transition: all .4s ease-in-out;
+						  -o-transition: all .4s ease-in-out;
+						  -webkit-transition: all .4s ease-in-out;
+						  transition: all .4s ease-in-out;
+					}
+					.bn635-hover:hover {
+					  background-position: 10% 0;
+					  moz-transition: all .4s ease-in-out;
+					  -o-transition: all .4s ease-in-out;
+					  -webkit-transition: all .4s ease-in-out;
+					  transition: all .4s ease-in-out;
+					}
+					
+					.bn635-hover:focus {
+					  outline: none;
+					}
+					
+					.bn635-hover.bn27 {
+					  background-image: linear-gradient(
+					    to right,
+					    #ed6ea0,
+					    #ec8c69,
+					    #f7186a,
+					    #fbb03b
+					  );
+					  box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+					}
 			
 			.bn632-hover:hover {
 			  background-position: 10% 0;
@@ -40,7 +79,7 @@
 			}
 			.neon {
 			    color: #cce7f8;
-			    font-size: 0.5rem;
+			    font-size: 1.5rem;
 			}
 			@-webkit-keyframes shining {
 			    from {
@@ -61,3 +100,32 @@
 					transform: scale(0.4);
 				}
 			}
+			input[type="text"], textarea {
+			            width: 100%;
+			            padding: 12px 20px;
+			            margin: 8px 0;
+			            display: inline-block;
+			            border: 1px solid #ccc;
+			            border-radius: 4px;
+			            box-sizing: border-box;
+			            background-color: transparent;
+			            color: white;
+			        }
+			        input[type="submit"] {
+			            width: 100%;
+			            background-color: #4CAF50;
+			            color: white;
+			            padding: 14px 20px;
+			            margin: 8px 0;
+			            border: none;
+			            border-radius: 4px;
+			            cursor: pointer;
+			        }
+			        input[type="submit"]:hover {
+			            background-color: #45a049;
+			        }
+			        .divtext {
+			            border-radius: 5px;
+			            background-color: #f2f2f2;
+			            padding: 20px;
+			        }
