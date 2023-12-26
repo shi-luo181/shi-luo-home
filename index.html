@@ -27,7 +27,6 @@
 <html>
 
 <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1000, initial-scale=0.5">
@@ -41,9 +40,11 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/text.css">
     <link rel="apple-touch-icon" href="./wj/apple-touch-icon.png">
     <link rel="icon" href="./wj/favicon.ico">
+	<script type="text/javascript" src="./bj.js"></script>>
 	<style>
 		body {
 		    transform: scale(1);
+			background-size: cover;
 		}
 		
 		@media (max-width: 1500px) {
@@ -55,14 +56,14 @@
 	</style>
 </head>
 
-<body>
+<body onload="setRandomBackground()">
     <span class="mobile btn-mobile-menu">
         <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
         <i class="social iconfont icon-angleup btn-mobile-close__icon hidden"></i>
     </span>
     <header id="panel" class="panel-cover">
-        <div class="panel-main">
-            <div class="panel-main__inner panel-inverted">
+        <div class="panel-main" >
+            <div class="panel-main__inner panel-inverted" >
                 <div class="panel-main__content">
                     <div class="ih-item circle effect right_to_left">            
                         <a href="#" title="" class="blog-button">

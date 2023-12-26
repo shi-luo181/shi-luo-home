@@ -27,6 +27,11 @@ var iUp = (function () {
 	};
 })();
 
+
+function decryptEmail(encoded) {
+	var address = atob(encoded);
+	window.location.href = "mailto:" + address;
+}
 function getBingImages(imgUrls) {
 	/**
 	 * 获取Bing壁纸
@@ -44,12 +49,6 @@ function getBingImages(imgUrls) {
 	panel.style.backgroundSize = "cover";
 	sessionStorage.setItem(indexName, index);
 }
-
-function decryptEmail(encoded) {
-	var address = atob(encoded);
-	window.location.href = "mailto:" + address;
-}
-
 document.addEventListener('DOMContentLoaded', function () {
 	// 获取一言数据
 	var xhr = new XMLHttpRequest();
@@ -143,3 +142,4 @@ var audio = document.getElementById("audioPlayer");
 		text.disabled = false;
 	  }
 	}
+	

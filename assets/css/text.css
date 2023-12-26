@@ -153,3 +153,17 @@
 					    width: 320px;
 					  }
 					}
+			function setBackground() {
+					    // 生成一个1到10之间的随机数
+					    var randomNumber = Math.floor(Math.random() * 10) + 1;
+					
+					    // 创建图片路径
+					    var imagePath = './bj/bj' + randomNumber + '.jpg';
+					
+					    // 获取body元素
+					    var body = document.querySelector('body');
+					
+					    // 设置背景图片
+					    body.style.backgroundImage = 'url(' + imagePath + ')';
+					    body.style.backgroundSize = 'cover';
+					}
