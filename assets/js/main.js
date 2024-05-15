@@ -41,7 +41,7 @@ function getBingImages(imgUrls) {
 	var indexName = "bing-image-index";
 	var index = sessionStorage.getItem(indexName);
 	var panel = document.querySelector('#panel');
-	if (isNaN(index) || index == 7) index = 0;
+	if (isNaN(index) || index == 14) index = 0;
 	else index++;
 	var imgUrl = imgUrls[index];
 	var url = "https://www.cn.bing.com" + imgUrl;
